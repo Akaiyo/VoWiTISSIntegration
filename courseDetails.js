@@ -3,7 +3,7 @@ const bulletList = document.querySelector("form > ul.bulletList");
 if (header != null && bulletList != null) {
     const rawH1 = header.textContent.trim();
     const firstNewLine = rawH1.indexOf('\n');
-    const lvaName = rawH1.substring(rawH1.indexOf(' '));
+    let lvaName = rawH1.substring(rawH1.indexOf(' '));
     if (firstNewLine !== -1) {
         lvaName = lvaName.substring(0, firstNewLine);
     }
